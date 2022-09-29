@@ -16,10 +16,12 @@
             {% for question in questions %}
                 <h2>{{question.question_text}}</h2>
                 {% for choice in question.choice_set.all %}
-                    <input type="radio", value="{{choice.id}}", name="{{question.id}}", id="choice{{forloop.counter}}" />
+                    <input type="radio", value="{{choice}}", name="{{question}}", id="choice{{forloop.counter}}" />
                     <label for="choice{{forloop.counter}}">{{choice.choice_text}}</label><br />
                 {% endfor %}
             {% endfor %}
+            <br />
+            <input type="submit">
         </fieldset>
     </form>
 </body>

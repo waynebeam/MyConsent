@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Question
 
+
 # Create your views here.
 
 def index(request):
@@ -9,9 +10,13 @@ def index(request):
 
 
 def pbmquestions(request):
-    questions = Question.objects.all()
+    questions = Question.objects.order_by('question_number')
     context = {'questions': questions}
     return render(request, 'PBMConsent/pbmquestions.html', context)
 
+
 def consent(request):
-    return HttpResponse("consent received!")
+    context = {}
+    for i, q in enumerate(Question.objects.order_by('question_number')):
+        context['answer' + str(i+1)] = request.POST[str(q)]
+    return render(request, 'PBMConsent/pbmconsent.html', context)
