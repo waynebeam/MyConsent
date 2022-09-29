@@ -8,13 +8,19 @@
     <title>Patient Blood Management Consent Questions</title>
 </head>
 <body>
-    <h1>Questions</h1>
-    {% for question in questions %}
-        <h2>{{question.question_text}}</h2>
-        {% for choice in question.choice_set.all %}
-            <p>{{choice.choice_text}}</p>
-        {% endfor %}
-    {% endfor %}
-
+    <h1>Patient Blood Management Consent Questions</h1>
+    <form method="post" action="{% url 'pbm:pbmconsent' %}">
+    {% csrf_token %}
+        <fieldset>
+            <legend>Please answer the following questions to state your wishes regarding blood products</legend>
+            {% for question in questions %}
+                <h2>{{question.question_text}}</h2>
+                {% for choice in question.choice_set.all %}
+                    <input type="radio", value="{{choice.id}}", name="{{question.id}}", id="choice{{forloop.counter}}" />
+                    <label for="choice{{forloop.counter}}">{{choice.choice_text}}</label><br />
+                {% endfor %}
+            {% endfor %}
+        </fieldset>
+    </form>
 </body>
 </html>

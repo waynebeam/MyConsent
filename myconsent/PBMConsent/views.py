@@ -12,3 +12,6 @@ def pbmquestions(request):
     questions = Question.objects.all()
     context = {'questions': questions}
     return render(request, 'PBMConsent/pbmquestions.html', context)
+
+def consent(request):
+    return HttpResponse("consent received!")
