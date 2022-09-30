@@ -1,0 +1,10 @@
+Okay so this is going well.
+
+The input form was tricky. But what we do now is show the choice text as a label for each radio button,
+but then the value of the radio button is the display text. This is sent with the POST. The name attached is the
+str version of the question. So we set in the dictionary answer+i to the value we get out of post. We look in post
+using the str of the question to pull out the display text of their choice. Then in the consent file we can just write
+{{answeri}} in the correct place. We are making hard-coded consents, so this part will be hardcoded.
+
+NEXTUP is to write the basic test consent. Maybe then redo the temp question to be a little more realistic. Then I
+can run through an entire test case.

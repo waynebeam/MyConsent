@@ -8,7 +8,39 @@
     <title>Patient Blood Management Consent Form</title>
 </head>
 <body>
-    <h1>Consent Page</h1>
-    <p>{{answer2}}</p>
+    <h1>Consent for Patient Blood Management</h1>
+    <!-- Question section -->
+    <p>
+        I _____________________, based on
+        <span class="patient-specific-entry">{{answer1}},</span>
+        refuse all blood
+        products. This includes red blood cells, white blood cells, plasma, and platelets.
+    </p>
+    <p>
+        Regarding treatments involving the use of blood fractions,
+        <span class="patient-specific-entry">{{answer2}}</span>
+    </p>
+    <p> Regarding procedures involving my own blood,
+        <span class="patient-specific-entry">{{answer3}}</span>
+    </p>
+    <p>
+        I fully understand that there may be adverse health outcomes related to my decisions regarding blood. My
+        provider has explained the risks to me and answered all of my questions. I accept these risks and release the
+        hospital from any liability from related to my personal choices regarding blood.
+    </p>
+    <p>
+        If my situation is deemed a true medical emergency requiring blood
+        <span class="patient-specific-entry">{{answer4}}</span>
+    </p>
+    <!-- signatures section -->
+
+    <p>_____________________ <br />Patient Signature</p>
+    <p>_____________________ <br />Patient Full Name PRINT</p>
+    <p>_____________________ <br />Date and Time</p>
+    <p>_____________________ <br />Witness Signature</p>
+    <p>_____________________ <br />Witness name PRINT</p>
+    <p>_____________________ <br />LIP Signature</p>
+    <p>_____________________ <br />LIP Name PRINT</p>
+
 </body>
 </html>
