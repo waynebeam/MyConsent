@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="main-body">
-    <h1>Patient Blood Management Consent Questionaire</h1>
+    <h1>Patient Blood Management Consent Questionnaire</h1>
     <form method="post" action="{% url 'pbm:pbmconsent' %}">
     {% csrf_token %}
         <fieldset>
@@ -19,7 +19,8 @@
             {% for question in questions %}
                 <h2>{{forloop.counter}}. {{question.question_text}}</h2>
                 {% for choice in question.choice_set.all %}
-                    <input class="radio" type="radio" value="{{choice.display_text}}" name="{{question}}" id="{{choice}}" />
+                    <input class="radio" type="radio" value="{{choice.display_text}}" name="{{question}}"
+                           id="{{choice}}" required/>
                     <label class="choice-text" for="{{choice}}">{{choice.choice_text}}</label><br />
                     <p class="choice-description">{{choice.description_text}}</p>
                 {% endfor %}

@@ -46,3 +46,10 @@ p.choice-description {
 .patient-specific-entry {
     font-weight:bold;
 }
+
+.question-section p {
+    text-indent: 2em;
+    font-size: 18px;
+}
+
+
