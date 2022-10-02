@@ -1,4 +1,4 @@
-<!doctype html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,9 +6,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Patient Blood Management Consent Form</title>
+    <link rel="stylesheet" href="{% static 'PBMConsent/style.css' %}">
+
 </head>
 <body>
-    <h1>Consent for Patient Blood Management</h1>
+    <h1>Patient Blood Management Consent</h1>
     <!-- Question section -->
     <p>
         I _____________________, based on
@@ -33,7 +35,7 @@
         <span class="patient-specific-entry">{{answer4}}</span>
     </p>
     <!-- signatures section -->
-
+    <div class="signature-section">
     <p>_____________________ <br />Patient Signature</p>
     <p>_____________________ <br />Patient Full Name PRINT</p>
     <p>_____________________ <br />Date and Time</p>
@@ -41,6 +43,7 @@
     <p>_____________________ <br />Witness name PRINT</p>
     <p>_____________________ <br />LIP Signature</p>
     <p>_____________________ <br />LIP Name PRINT</p>
+    </div>
 
 </body>
 </html>

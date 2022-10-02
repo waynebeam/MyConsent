@@ -1,0 +1,48 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #c9c9c9;
+    font-family: 'Helvetica Neue','Helvetica','Arial','sans-serif';
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+body {
+    width: 90%;
+    background-color: white;
+    margin: 40px auto;
+    padding: 40px;
+}
+
+input.radio {
+    appearance: none;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #555555;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    transition: .1s linear all;
+}
+
+input.radio:checked {
+    border: 8px solid black;
+}
+
+label.choice-text {
+    font-weight: bold;
+}
+
+p.choice-description {
+    font-style: italic;
+    text-indent: 3em;
+}
+
+/* rendered consent form */
+
+.patient-specific-entry {
+    font-weight:bold;
+}

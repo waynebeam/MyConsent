@@ -1,4 +1,5 @@
-<!doctype html>
+{% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,23 +7,27 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Patient Blood Management Consent Questions</title>
+    <link rel="stylesheet" href="{% static 'PBMConsent/style.css' %}">
 </head>
 <body>
-    <h1>Patient Blood Management Consent Questions</h1>
+<div class="main-body">
+    <h1>Patient Blood Management Consent Questionaire</h1>
     <form method="post" action="{% url 'pbm:pbmconsent' %}">
     {% csrf_token %}
         <fieldset>
             <legend>Please answer the following questions to state your wishes regarding blood products</legend>
             {% for question in questions %}
-                <h2>{{question.question_text}}</h2>
+                <h2>{{forloop.counter}}. {{question.question_text}}</h2>
                 {% for choice in question.choice_set.all %}
-                    <input type="radio" value="{{choice.display_text}}" name="{{question}}" id="choice{{forloop.counter}}" />
-                    <label for="choice{{forloop.counter}}">{{choice.choice_text}}</label><br />
+                    <input class="radio" type="radio" value="{{choice.display_text}}" name="{{question}}" id="{{choice}}" />
+                    <label class="choice-text" for="{{choice}}">{{choice.choice_text}}</label><br />
+                    <p class="choice-description">{{choice.description_text}}</p>
                 {% endfor %}
             {% endfor %}
             <br />
             <input type="submit">
         </fieldset>
     </form>
+</div>
 </body>
 </html>
