@@ -5,20 +5,7 @@ html {
     font-family: 'Helvetica Neue','Helvetica','Arial','sans-serif';
 }
 
-.sticker-section h2 {
-    padding: 20px;
-    border: 1px solid grey;
-    width: 200px;
-    display: inline;
-    position:relative;
 
-}
-
-
-h2.patient-label{
-
-    left: 50%;
-}
 
 h1 {
     text-align: center;
@@ -74,6 +61,22 @@ p.choice-description {
 
 /* rendered consent form */
 
+.sticker-section h2 {
+    padding: 20px;
+    border: 1px solid grey;
+    width: 200px;
+    display: inline;
+    position:relative;
+    margin-top: 10px;
+
+}
+
+
+h2.patient-label{
+
+    left: 50%;
+}
+
 .patient-specific-entry {
     font-weight:bold;
 }
@@ -101,12 +104,26 @@ hr {
 }
 
 hr.date-line {
-    width: 200px;
+    width: 225px;
 }
 
 #today-date {
     font-weight: bold;
     white-space: pre;
+}
+
+div.disclaimer{
+
+}
+
+div.disclaimer p {
+    position: fixed;
+    margin:auto;
+    top: 95%;
+    border: 1px dashed black;
+    padding: 0px;
+    background-color: grey;
+
 }
 
 
