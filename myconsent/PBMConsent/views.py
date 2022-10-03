@@ -22,7 +22,7 @@ def consent(request):
         context['answer' + str(i + 1)] = request.POST[str(q)]
 
     use_date = request.POST.get("include_date_time", "off")
-    today_str = '                   '
+    today_str = '    /    /    '
     today = datetime.date.today()
 
     if use_date == 'on':

@@ -67,5 +67,31 @@ p.choice-description {
     font-size: 18px;
 }
 
+div.signature-section {
+    font-size: 18px;
+}
+
+div.signature-line {
+    line-height: 0.1em;
+    margin: 45px 10px;
+    display: block;
+
+}
+
+hr {
+    width: 400px;
+    margin-left: 0px;
+    border: 1px solid black;
+}
+
+hr.date-line {
+    width: 200px;
+}
+
+#today-date {
+    font-weight: bold;
+    white-space: pre;
+}
+
 
 

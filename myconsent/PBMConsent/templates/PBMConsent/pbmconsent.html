@@ -38,14 +38,28 @@
     </div>
     <!-- signatures section -->
     <div class="signature-section">
-    <p>________________________________________ <br />Patient or Agent Signature</p>
-    <p>________________________________________ <br />Patient or Agent Name Print</p>
-    <p>________________________________________ <br />Signer Relation to Patient</p>
-    <p style="white-space:pre"><u>             {{date}}                                               </u> <br />Date and Time</p>
-    <p>________________________________________ <br />Witness Signature</p>
-    <p>________________________________________ <br />Witness Name Print</p>
-    <p>________________________________________ <br />LIP Signature</p>
-    <p>________________________________________ <br />LIP Name Print</p>
+        <div class="signature-line">
+            <hr />
+            <p>Patient or agent signature</p>
+        </div>
+        <div class="signature-line">
+            <hr />
+            <p>Patient or agent name print</p>
+        </div>
+        <div class="signature-line">
+            <p id="today-date">{{date}}            :</p>
+            <hr class="date-line" />
+            <p>Date and time</p>
+        </div>
+        <div class="signature-line">
+            <hr />
+            <p>LIP name signature</p>
+        </div>
+        <div class="signature-line">
+            <hr />
+            <p>LIP name print</p>
+        </div>
+
     </div>
 
 </body>
