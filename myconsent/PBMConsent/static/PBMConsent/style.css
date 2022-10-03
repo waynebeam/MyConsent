@@ -41,6 +41,21 @@ p.choice-description {
     text-indent: 3em;
 }
 
+.submit-button {
+    appearance: none;
+    margin-top: 25px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.date-time {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 5px;
+}
+
 /* rendered consent form */
 
 .patient-specific-entry {
@@ -51,5 +66,6 @@ p.choice-description {
     text-indent: 2em;
     font-size: 18px;
 }
+
 
 
