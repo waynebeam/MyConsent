@@ -1,1 +1,22 @@
-<a href="{% url 'pbm:pbmquestions' %}">this is the placeholder home screen for MyConsent</a>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MyConsent - Home</title>
+    <link rel="stylesheet" href="{% static 'PBMConsent/style.css' %}" />
+</head>
+<body>
+<div class="homepage-body">
+    <h1>MyConsent</h1>
+    <h2>Custom medical consent forms
+    based on patient input</h2>
+
+    <a class="homepage-link" href="{% url 'pbm:pbmquestions' %}">Generate Patient Blood Management Consent</a>
+</div>
+
+</body>
+</html>
