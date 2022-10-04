@@ -1,1 +1,1 @@
-web: gunicorn myconsent.wsgi --log-file
+web: gunicorn myconsent.myconsent.wsgi --log-file
