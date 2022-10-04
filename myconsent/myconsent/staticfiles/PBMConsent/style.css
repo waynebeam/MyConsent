@@ -1,0 +1,141 @@
+/* index page */
+
+.homepage-body {
+    text-align: center;
+}
+
+.homepage-link {
+    font-size: 17px;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #c9c9c9;
+    font-family: 'Helvetica Neue','Helvetica','Arial','sans-serif';
+}
+
+
+
+h1 {
+    text-align: center;
+    margin:80px 0px 40px 0px;
+
+}
+
+body {
+    width: 90%;
+    background-color: white;
+    margin: 40px auto;
+    padding: 40px;
+}
+
+input.radio {
+    appearance: none;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #555555;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    transition: .1s linear all;
+}
+
+input.radio:checked {
+    border: 8px solid black;
+}
+
+label.choice-text {
+    font-weight: bold;
+}
+
+p.choice-description {
+    font-style: italic;
+    text-indent: 3em;
+}
+
+.submit-button {
+    appearance: none;
+    margin-top: 25px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.date-time {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 5px;
+}
+
+/* rendered consent form */
+
+.sticker-section h2 {
+    padding: 20px;
+    border: 1px solid grey;
+    width: 200px;
+    display: inline;
+    position:relative;
+    margin-top: 10px;
+
+}
+
+
+h2.patient-label{
+
+    left: 50%;
+}
+
+.patient-specific-entry {
+    font-weight:bold;
+}
+
+.question-section p {
+    text-indent: 2em;
+    font-size: 18px;
+}
+
+div.signature-section {
+    font-size: 18px;
+}
+
+div.signature-line {
+    line-height: 0.1em;
+    margin: 45px 10px;
+    display: block;
+
+}
+
+hr {
+    width: 400px;
+    margin-left: 0px;
+    border: 1px solid black;
+}
+
+hr.date-line {
+    width: 225px;
+}
+
+#today-date {
+    font-weight: bold;
+    white-space: pre;
+}
+
+div.disclaimer{
+
+}
+
+div.disclaimer p {
+    position: fixed;
+    margin:auto;
+    top: 95%;
+    border: 1px dashed black;
+    padding: 0px;
+    background-color: grey;
+
+}
+
+
+
+
