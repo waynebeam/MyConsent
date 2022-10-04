@@ -1,1 +1,1 @@
-web: gunicorn myconsent.wsgi
+web: gunicorn myconsent.myconsent.wsgi
