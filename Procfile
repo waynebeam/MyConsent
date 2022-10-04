@@ -1,1 +1,1 @@
-web: gunicorn myconsent.myconsent.wsgi
+web: gunicorn  --chdir myconsent myconsent.wsgi
