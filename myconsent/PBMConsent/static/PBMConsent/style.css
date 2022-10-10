@@ -11,11 +11,19 @@
 
 html {
     height: 100%;
-    width: 100%;
+    width: 900px;
     background-color: #c9c9c9;
     font-family: 'Helvetica Neue','Helvetica','Arial','sans-serif';
+    margin: auto;
 }
 
+@media print {
+    body{
+        width: 22cm;
+        height: 28cm;
+        margin: 30mm 45mm 30mm 45mm;
+   }
+}
 
 
 h1 {
