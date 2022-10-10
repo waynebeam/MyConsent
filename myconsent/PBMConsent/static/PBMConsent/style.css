@@ -23,7 +23,7 @@ html {
     body{
         width: 22cm;
         height: 28cm;
-        margin: 20mm;
+
    }
 }
 
@@ -84,6 +84,7 @@ p.choice-description {
 
 #consent-body {
     font-family: Georgia, Times New Roman, Times, serif;
+    height:auto;
 }
 
 .sticker-section h2 {
@@ -99,13 +100,16 @@ p.choice-description {
 
 h2.patient-label{
 
-    left: 50%;
-    margin-right: 180px;
+    right: -350px;
 
 }
 
 .patient-specific-entry {
     font-weight:bold;
+}
+
+div.question-section {
+    min-width: 810px;
 }
 
 .question-section p {
