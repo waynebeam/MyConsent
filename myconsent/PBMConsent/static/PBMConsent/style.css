@@ -13,7 +13,7 @@ html {
     height: 100%;
     width: 900px;
     background-color: #c9c9c9;
-    font-family: 'Helvetica Neue','Helvetica','Arial','sans-serif';
+    font-family:'Helvetica Neue','Helvetica','Arial','sans-serif';
     margin: auto;
 }
 
@@ -79,6 +79,10 @@ p.choice-description {
 }
 
 /* rendered consent form */
+
+#consent-body {
+    font-family:'Georgia';
+}
 
 .sticker-section h2 {
     padding: 20px;
