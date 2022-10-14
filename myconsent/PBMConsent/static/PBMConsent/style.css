@@ -18,14 +18,6 @@ html {
     margin: auto;
 }
 
-@media print {
-
-    body{
-        width: 22cm;
-        height: 28cm;
-
-   }
-}
 
 
 h1 {
@@ -159,3 +151,6 @@ div.disclaimer p {
 
 
 
+@page {
+    size: 8.5in 11in;
+}
