@@ -26,7 +26,7 @@ def consent(request):
     today = datetime.date.today()
 
     if use_date == 'on':
-        today_str = today.strftime('%d/%m/%Y')
+        today_str = today.strftime('%m/%d/%Y')
 
     context['date'] = today_str
 
