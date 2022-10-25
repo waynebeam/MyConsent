@@ -18,14 +18,6 @@ html {
     margin: auto;
 }
 
-@media print {
-
-    body{
-        width: 22cm;
-        height: 28cm;
-
-   }
-}
 
 
 h1 {
@@ -97,6 +89,17 @@ p.choice-description {
 
 }
 
+.main-heading {
+    margin-bottom: 10px;
+}
+
+div.disclaimer p {
+    margin:20px auto 70px auto;
+    border: 1px dashed black;
+    padding: 0px;
+    text-align: center;
+
+}
 
 h2.patient-label{
 
@@ -143,19 +146,12 @@ hr.date-line {
     white-space: pre;
 }
 
-div.disclaimer{
 
+
+
+
+
+@page {
+    size: 8.5in 11in;
+    margin-right: 0.5in;
 }
-
-div.disclaimer p {
-    position: fixed;
-    margin:auto;
-    top: 95%;
-    border: 1px dashed black;
-    padding: 0px;
-    background-color: grey;
-
-}
-
-
-
