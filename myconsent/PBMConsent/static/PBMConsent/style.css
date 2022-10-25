@@ -89,6 +89,17 @@ p.choice-description {
 
 }
 
+.main-heading {
+    margin-bottom: 10px;
+}
+
+div.disclaimer p {
+    margin:20px auto 70px auto;
+    border: 1px dashed black;
+    padding: 0px;
+    text-align: center;
+
+}
 
 h2.patient-label{
 
@@ -135,19 +146,8 @@ hr.date-line {
     white-space: pre;
 }
 
-div.disclaimer{
 
-}
 
-div.disclaimer p {
-    position: fixed;
-    margin:auto;
-    top: 95%;
-    border: 1px dashed black;
-    padding: 0px;
-    background-color: grey;
-
-}
 
 
 
